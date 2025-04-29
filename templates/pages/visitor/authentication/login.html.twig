@@ -44,7 +44,9 @@
                 </div>
                 <div class="col-lg-5">
                     <h1 class="my-3">Connexion</h1>
-                    
+
+                    {% include "components/alert.html.twig" %}
+
                     <form method="post">
                         {% if error %}
                             <div class="alert alert-danger text-center">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
