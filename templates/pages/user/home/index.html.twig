@@ -1,1 +1,9 @@
-<h1>USER</h1>
+{% extends "themes/base_user.html.twig" %}
+
+{% block title %}Espace Privé{% endblock %}
+
+{% block description %}Accéder à votre espace privé{% endblock %}
+
+{% block main %}
+    <h1 class="text-center  my-3 display-5">Hello {{app.user.firstName}}</h1>
+{% endblock %}
